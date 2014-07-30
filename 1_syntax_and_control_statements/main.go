@@ -1,6 +1,7 @@
 package main
 
 import (
+	"code.google.com/p/go-uuid/uuid"
 	"fmt"
 	"time"
 )
@@ -45,4 +46,8 @@ func main() {
 	}
 
 	fmt.Printf("The time is: %s\n", time.Now())
+
+	fmt.Println(uuid.New())
+	fmt.Printf("%s", uuid.Version())
+
 }
